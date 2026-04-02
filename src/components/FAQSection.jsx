@@ -4,24 +4,16 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 
 const FAQ_ITEMS = [
   {
-    q: "Pregunta 1 — Títol de la pregunta freqüent",
-    a: "Aquí apareixerà la resposta a aquesta pregunta. El contingut serà proporcionat per l'equip d'ASSE7. Podeu afegir tot el text necessari per respondre de manera clara i completa.",
+    q: "Arquitectura Digital",
+    a: "Branding · Web · Contingut per a xarxes. La majoria de marques tenen web. Poques tenen una identitat que es reconeix abans de llegir el nom.",
   },
   {
-    q: "Pregunta 2 — Títol de la pregunta freqüent",
-    a: "Aquí apareixerà la resposta a aquesta pregunta. El contingut serà proporcionat per l'equip d'ASSE7. Podeu afegir tot el text necessari per respondre de manera clara i completa.",
+    q: "Posicionament Estratègic",
+    a: "Patrocinis · Esdeveniments · Activacions de marca. Hi ha patrocinis que acaben en un banner. I d'altres que el públic recorda anys després.",
   },
   {
-    q: "Pregunta 3 — Títol de la pregunta freqüent",
-    a: "Aquí apareixerà la resposta a aquesta pregunta. El contingut serà proporcionat per l'equip d'ASSE7. Podeu afegir tot el text necessari per respondre de manera clara i completa.",
-  },
-  {
-    q: "Pregunta 4 — Títol de la pregunta freqüent",
-    a: "Aquí apareixerà la resposta a aquesta pregunta. El contingut serà proporcionat per l'equip d'ASSE7. Podeu afegir tot el text necessari per respondre de manera clara i completa.",
-  },
-  {
-    q: "Pregunta 5 — Títol de la pregunta freqüent",
-    a: "Aquí apareixerà la resposta a aquesta pregunta. El contingut serà proporcionat per l'equip d'ASSE7. Podeu afegir tot el text necessari per respondre de manera clara i completa.",
+    q: "Innovació Visual",
+    a: "DOOH · Producció anamòrfica · Contingut 3. Hi ha formats publicitaris que ningú mira. I d'altres que la gent para a veure i comparteix.",
   },
 ];
 

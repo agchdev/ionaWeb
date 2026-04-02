@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 /* ── Particle System ─────────────────────────────── */
@@ -204,20 +205,18 @@ export default function HeroSection() {
           animate={{ clipPath: "inset(0% 0 0 0)", opacity: 1 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
         >
-          <h1
+          <Image
+            src="/logoIona.png"
+            alt="Iona"
+            width={973}
+            height={974}
+            priority
             style={{
-              fontFamily: "'Space Grotesk', 'Helvetica Neue', sans-serif",
-              fontSize: "clamp(72px, 20vw, 280px)",
-              fontWeight: 700,
-              letterSpacing: "-0.03em",
-              lineHeight: 0.9,
-              color: "#fff",
-              margin: 0,
-              textTransform: "uppercase",
+              width: "clamp(180px, 34vw, 440px)",
+              height: "auto",
+              display: "block",
             }}
-          >
-            ASSE7
-          </h1>
+          />
         </motion.div>
 
         {/* Phonetic */}
