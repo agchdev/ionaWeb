@@ -15,7 +15,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Innovació Visual",
-    subtitle: "DOOH · Producció anamòrfica · Contingut 3",
+    subtitle: "DOOH · Producció anamòrfica · Contingut 3D",
     text: "Hi ha formats publicitaris que ningú mira. I d'altres que la gent para a veure i comparteix.",
   },
 ];

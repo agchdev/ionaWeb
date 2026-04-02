@@ -1,13 +1,5 @@
 "use client";
-import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
-
-const quoteFont = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-});
 
 export default function StatementSection() {
   return (
@@ -22,7 +14,6 @@ export default function StatementSection() {
       }}
     >
       <motion.div
-        className={quoteFont.className}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-120px" }}
@@ -38,6 +29,7 @@ export default function StatementSection() {
             color: "#f2f2f2",
             fontSize: "clamp(44px, 7vw, 92px)",
             fontWeight: 400,
+            fontStyle: "italic",
             letterSpacing: "-0.01em",
           }}
         >
