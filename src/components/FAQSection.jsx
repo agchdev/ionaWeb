@@ -117,7 +117,7 @@ function FaqItem({ item, index, isOpen, onToggle }) {
                 style={{
                   margin: "clamp(12px, 1.8vh, 18px) 0 0",
                   color: "rgba(255,255,255,0.85)",
-                  fontSize: "clamp(15px, 1.6vw, 24px)",
+                  fontSize: "clamp(35px, 4vw, 24px)",
                   fontWeight: 600,
                   fontStyle: "italic",
                   lineHeight: 1.3,
@@ -129,7 +129,7 @@ function FaqItem({ item, index, isOpen, onToggle }) {
                 style={{
                   margin: "clamp(12px, 2vh, 20px) 0 0",
                   color: "rgba(255,255,255,0.55)",
-                  fontSize: "clamp(13px, 1.3vw, 18px)",
+                  fontSize: "clamp(25px, 2vw, 18px)",
                   fontWeight: 300,
                   lineHeight: 1.75,
                 }}

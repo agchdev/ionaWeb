@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="ca">
       <body className={poppins.className} style={{ margin: 0, background: "#000", overflowX: "hidden" }}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
