@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import HeroSection from "@/components/HeroSection";
+import StatementSection from "@/components/StatementSection";
 import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <CustomCursor />
       <main>
         <HeroSection />
+        <StatementSection />
         <FAQSection />
         <ContactForm />
       </main>

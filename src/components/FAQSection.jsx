@@ -48,7 +48,7 @@ function FaqItem({ item, index, isOpen, onToggle }) {
       >
         <span
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(18px, 2.8vw, 36px)",
             fontWeight: 500,
             letterSpacing: "-0.01em",
@@ -104,7 +104,7 @@ function FaqItem({ item, index, isOpen, onToggle }) {
           >
             <p
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "Georgia, 'Times New Roman', serif",
                 fontSize: "clamp(15px, 1.8vw, 22px)",
                 fontWeight: 300,
                 color: "rgba(255,255,255,0.5)",
@@ -146,7 +146,7 @@ export default function FAQSection() {
           transition={{ duration: 0.6 }}
           style={{
             display: "block",
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(11px, 1.2vw, 14px)",
             letterSpacing: "0.35em",
             color: "rgba(255,255,255,0.3)",
@@ -161,7 +161,7 @@ export default function FAQSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(40px, 9vw, 120px)",
             fontWeight: 700,
             letterSpacing: "-0.03em",
@@ -170,9 +170,9 @@ export default function FAQSection() {
             lineHeight: 0.95,
           }}
         >
-          Preguntes
+          Serveis
           <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>Freqüents</span>
+          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>Tres maneres de fer-te inoblidable.</span>
         </motion.h2>
       </div>
 

@@ -15,7 +15,7 @@ function FloatingInput({ label, type = "text", name, isTextarea = false }) {
       ? "1.5px solid rgba(255,255,255,0.85)"
       : "1px solid rgba(255,255,255,0.2)",
     color: "#fff",
-    fontFamily: "'Space Grotesk', sans-serif",
+    fontFamily: "Georgia, 'Times New Roman', serif",
     fontSize: "clamp(15px, 1.6vw, 20px)",
     fontWeight: 300,
     padding: isTextarea ? "32px 0 16px" : "28px 0 12px",
@@ -39,7 +39,7 @@ function FloatingInput({ label, type = "text", name, isTextarea = false }) {
           textTransform: "uppercase",
           pointerEvents: "none",
           transition: "all 0.25s ease",
-          fontFamily: "'Space Grotesk', sans-serif",
+          fontFamily: "Georgia, 'Times New Roman', serif",
           fontWeight: 300,
         }}
       >
@@ -114,7 +114,7 @@ export default function ContactForm() {
           transition={{ duration: 0.6 }}
           style={{
             display: "block",
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(11px, 1.2vw, 14px)",
             letterSpacing: "0.35em",
             color: "rgba(255,255,255,0.3)",
@@ -130,7 +130,7 @@ export default function ContactForm() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
+            fontFamily: "Georgia, 'Times New Roman', serif",
             fontSize: "clamp(40px, 9vw, 120px)",
             fontWeight: 700,
             letterSpacing: "-0.03em",
@@ -139,9 +139,9 @@ export default function ContactForm() {
             lineHeight: 0.95,
           }}
         >
-          Parlem
+          Tens algún projecte en ment?
           <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>junts</span>
+          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>Explica&rsquo;ns-el</span>
         </motion.h2>
 
         {/* Form */}
@@ -180,7 +180,7 @@ export default function ContactForm() {
                   border: "1.5px solid rgba(255,255,255,0.5)",
                   borderRadius: 999,
                   color: hovering ? "#000" : "#fff",
-                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontFamily: "Georgia, 'Times New Roman', serif",
                   fontSize: "clamp(14px, 1.5vw, 18px)",
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
@@ -206,7 +206,7 @@ export default function ContactForm() {
 
               <p style={{
                 marginTop: 24,
-                fontFamily: "'Space Grotesk', sans-serif",
+                fontFamily: "Georgia, 'Times New Roman', serif",
                 fontSize: "clamp(12px, 1.2vw, 15px)",
                 color: "rgba(255,255,255,0.25)",
                 letterSpacing: "0.05em",
@@ -229,7 +229,7 @@ export default function ContactForm() {
             transition={{ duration: 0.6 }}
             style={{
               padding: "clamp(40px, 6vh, 80px) 0",
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "Georgia, 'Times New Roman', serif",
             }}
           >
             <p style={{ fontSize: "clamp(28px, 4vw, 52px)", color: "#fff", fontWeight: 500, margin: "0 0 16px" }}>
