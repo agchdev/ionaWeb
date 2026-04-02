@@ -5,15 +5,21 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 const FAQ_ITEMS = [
   {
     q: "Arquitectura Digital",
-    a: "Branding · Web · Contingut per a xarxes. La majoria de marques tenen web. Poques tenen una identitat que es reconeix abans de llegir el nom.",
+    title: "Arquitectura Digital",
+    subtitle: "Branding · Web · Contingut per a xarxes",
+    text: "La majoria de marques tenen web. Poques tenen una identitat que es reconeix abans de llegir el nom.",
   },
   {
     q: "Posicionament Estratègic",
-    a: "Patrocinis · Esdeveniments · Activacions de marca. Hi ha patrocinis que acaben en un banner. I d'altres que el públic recorda anys després.",
+    title: "Posicionament Estratègic",
+    subtitle: "Patrocinis · Esdeveniments · Activacions de marca",
+    text: "Hi ha patrocinis que acaben en un banner. I d'altres que el públic recorda anys després.",
   },
   {
     q: "Innovació Visual",
-    a: "DOOH · Producció anamòrfica · Contingut 3. Hi ha formats publicitaris que ningú mira. I d'altres que la gent para a veure i comparteix.",
+    title: "Innovació Visual",
+    subtitle: "DOOH · Producció anamòrfica · Contingut 3",
+    text: "Hi ha formats publicitaris que ningú mira. I d'altres que la gent para a veure i comparteix.",
   },
 ];
 
@@ -48,7 +54,7 @@ function FaqItem({ item, index, isOpen, onToggle }) {
       >
         <span
           style={{
-            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontFamily: "'Poppins', sans-serif",
             fontSize: "clamp(18px, 2.8vw, 36px)",
             fontWeight: 500,
             letterSpacing: "-0.01em",
@@ -102,21 +108,49 @@ function FaqItem({ item, index, isOpen, onToggle }) {
             transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
             style={{ overflow: "hidden" }}
           >
-            <p
+            <div
               style={{
-                fontFamily: "Georgia, 'Times New Roman', serif",
-                fontSize: "clamp(15px, 1.8vw, 22px)",
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.5)",
-                lineHeight: 1.75,
+                fontFamily: "'Poppins', sans-serif",
                 paddingBottom: "clamp(28px, 4vh, 52px)",
                 paddingLeft: "clamp(28px, 4vw, 64px)",
-                margin: 0,
                 maxWidth: "80ch",
               }}
             >
-              {item.a}
-            </p>
+              <h3
+                style={{
+                  margin: 0,
+                  color: "#fff",
+                  fontSize: "clamp(18px, 2vw, 28px)",
+                  fontWeight: 600,
+                  lineHeight: 1.2,
+                }}
+              >
+                {item.title}
+              </h3>
+              <p
+                style={{
+                  margin: "clamp(12px, 1.8vh, 18px) 0 0",
+                  color: "rgba(255,255,255,0.85)",
+                  fontSize: "clamp(15px, 1.6vw, 24px)",
+                  fontWeight: 600,
+                  fontStyle: "italic",
+                  lineHeight: 1.3,
+                }}
+              >
+                {item.subtitle}
+              </p>
+              <p
+                style={{
+                  margin: "clamp(12px, 2vh, 20px) 0 0",
+                  color: "rgba(255,255,255,0.55)",
+                  fontSize: "clamp(13px, 1.3vw, 18px)",
+                  fontWeight: 300,
+                  lineHeight: 1.75,
+                }}
+              >
+                {item.text}
+              </p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -146,7 +180,7 @@ export default function FAQSection() {
           transition={{ duration: 0.6 }}
           style={{
             display: "block",
-            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontFamily: "'Poppins', sans-serif",
             fontSize: "clamp(11px, 1.2vw, 14px)",
             letterSpacing: "0.35em",
             color: "rgba(255,255,255,0.3)",
@@ -161,8 +195,8 @@ export default function FAQSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           style={{
-            fontFamily: "Georgia, 'Times New Roman', serif",
-            fontSize: "clamp(40px, 9vw, 120px)",
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: "clamp(32px, 7vw, 92px)",
             fontWeight: 700,
             letterSpacing: "-0.03em",
             color: "#fff",

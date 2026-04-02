@@ -27,7 +27,7 @@ export default function StatementSection() {
           style={{
             margin: 0,
             color: "#f2f2f2",
-            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontFamily: "'Poppins', sans-serif",
             fontSize: "clamp(44px, 7vw, 92px)",
             fontWeight: 500,
             letterSpacing: "-0.01em",
@@ -39,7 +39,7 @@ export default function StatementSection() {
           style={{
             margin: "clamp(8px, 2vh, 20px) 0 0",
             color: "rgba(255,255,255,0.25)",
-            fontFamily: "Georgia, 'Times New Roman', serif",
+            fontFamily: "'Poppins', sans-serif",
             fontSize: "clamp(46px, 7.2vw, 98px)",
             fontWeight: 500,
             fontStyle: "italic",

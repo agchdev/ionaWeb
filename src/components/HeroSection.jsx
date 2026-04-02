@@ -224,7 +224,7 @@ export default function HeroSection() {
           <GlitchText
             text="[ 'as.et ]"
             style={{
-              fontFamily: "Georgia, 'Times New Roman', serif",
+              fontFamily: "'Poppins', sans-serif",
               fontStyle: "italic",
               fontSize: "clamp(28px, 5vw, 70px)",
               fontWeight: 300,
@@ -240,8 +240,8 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.6 }}
           style={{
-            fontFamily: "Georgia, 'Times New Roman', serif",
-            fontSize: "clamp(13px, 1.8vw, 20px)",
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: "clamp(11px, 1.6vw, 20px)",
             letterSpacing: "0.25em",
             color: "rgba(255,255,255,0.55)",
             fontWeight: 300,
