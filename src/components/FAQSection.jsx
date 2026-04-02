@@ -5,19 +5,16 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 const FAQ_ITEMS = [
   {
     q: "Arquitectura Digital",
-    title: "Arquitectura Digital",
     subtitle: "Branding · Web · Contingut per a xarxes",
     text: "La majoria de marques tenen web. Poques tenen una identitat que es reconeix abans de llegir el nom.",
   },
   {
     q: "Posicionament Estratègic",
-    title: "Posicionament Estratègic",
     subtitle: "Patrocinis · Esdeveniments · Activacions de marca",
     text: "Hi ha patrocinis que acaben en un banner. I d'altres que el públic recorda anys després.",
   },
   {
     q: "Innovació Visual",
-    title: "Innovació Visual",
     subtitle: "DOOH · Producció anamòrfica · Contingut 3",
     text: "Hi ha formats publicitaris que ningú mira. I d'altres que la gent para a veure i comparteix.",
   },
@@ -116,17 +113,6 @@ function FaqItem({ item, index, isOpen, onToggle }) {
                 maxWidth: "80ch",
               }}
             >
-              <h3
-                style={{
-                  margin: 0,
-                  color: "#fff",
-                  fontSize: "clamp(18px, 2vw, 28px)",
-                  fontWeight: 600,
-                  lineHeight: 1.2,
-                }}
-              >
-                {item.title}
-              </h3>
               <p
                 style={{
                   margin: "clamp(12px, 1.8vh, 18px) 0 0",
@@ -196,7 +182,6 @@ export default function FAQSection() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           style={{
             fontFamily: "'Poppins', sans-serif",
-            fontSize: "clamp(32px, 7vw, 92px)",
             fontWeight: 700,
             letterSpacing: "-0.03em",
             color: "#fff",
@@ -204,9 +189,9 @@ export default function FAQSection() {
             lineHeight: 0.95,
           }}
         >
-          Serveis
+          <span style={{fontSize: "clamp(32px, 5vw, 92px)", marginBottom: "50px"}}>Serveis</span>
           <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>Tres maneres de fer-te inoblidable.</span>
+          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300, fontSize: "clamp(32px, 3vw, 92px)" }}>Tres maneres de fer-te inoblidable.</span>
         </motion.h2>
       </div>
 
