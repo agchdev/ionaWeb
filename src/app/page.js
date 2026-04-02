@@ -14,8 +14,8 @@ export default function Home() {
       <CustomCursor />
       <main>
         <HeroSection />
-        <StatementSection />
         <FAQSection />
+        <StatementSection />
         <ContactForm />
       </main>
       <footer>

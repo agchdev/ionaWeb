@@ -91,7 +91,7 @@ export default function CustomCursor() {
         transform: "translate3d(-100px, -100px, 0)",
         transition: "opacity 0.2s ease, transform 0.12s ease-out",
         willChange: "transform, opacity",
-        filter: "drop-shadow(0 0 12px rgba(255,255,255,0.22))",
+        mixBlendMode: "difference",
       }}
     >
       <img
