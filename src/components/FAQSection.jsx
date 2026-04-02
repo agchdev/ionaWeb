@@ -189,9 +189,19 @@ export default function FAQSection() {
             lineHeight: 0.95,
           }}
         >
-          <span style={{fontSize: "clamp(32px, 5vw, 92px)", marginBottom: "50px"}}>Serveis</span>
+          <span style={{fontSize: "clamp(32px, 5vw, 92px)"}}>Serveis</span>
           <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300, fontSize: "clamp(32px, 3vw, 92px)" }}>Tres maneres de fer-te inoblidable.</span>
+          <span
+            style={{
+              display: "inline-block",
+              marginTop: 10,
+              color: "rgba(255,255,255,0.3)",
+              fontWeight: 300,
+              fontSize: "clamp(32px, 3vw, 92px)",
+            }}
+          >
+            Tres maneres de fer-te inoblidable.
+          </span>
         </motion.h2>
       </div>
 

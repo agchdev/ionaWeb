@@ -19,7 +19,7 @@ export default function Home() {
         <ContactForm />
       </main>
       <footer>
-        <p>© 2025 ASSE7</p>
+        <p>© 2026 ASSE7</p>
         <p>Identitat · Estratègia · Presència</p>
       </footer>
     </>

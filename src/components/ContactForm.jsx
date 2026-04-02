@@ -131,7 +131,6 @@ export default function ContactForm() {
           transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           style={{
             fontFamily: "'Poppins', sans-serif",
-            fontSize: "clamp(32px, 7vw, 92px)",
             fontWeight: 700,
             letterSpacing: "-0.03em",
             color: "#fff",
@@ -139,9 +138,19 @@ export default function ContactForm() {
             lineHeight: 0.95,
           }}
         >
-          Tens algún projecte en ment?
+          <span style={{fontSize: "clamp(32px, 5vw, 92px)"}}>Tens algún projecte en ment?</span>
           <br />
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>Explica&rsquo;ns-el</span>
+          <span
+            style={{
+              display: "inline-block",
+              marginTop: 10,
+              color: "rgba(255,255,255,0.3)",
+              fontSize: "clamp(32px, 3vw, 92px)",
+              fontWeight: 300,
+            }}
+          >
+            Explica&rsquo;ns-el
+          </span>
         </motion.h2>
 
         {/* Form */}
